@@ -1,3 +1,27 @@
+function homePage(callback){
+    setTimeout(() => {
+        console.log("This is Home Page, and is loading");
+        callback();
+    }, 5000);
+    
+}
+
+function secondPage(){
+    setTimeout(() => {
+        console.log("This is second page, and is load only after complete loading of the Home Page");
+    }, 1000);
+    
+}
+
+homePage(secondPage);
+//secondPage();
+        
+
+
+
+
+
+                /*
 let students = [
     {name:"Shruti", Subject: "JavaScript"},
     {name:"Himanshu", Subject:"Data Science"}
@@ -30,3 +54,9 @@ let std = {name:"Vidhi", Subject:"Machine Learning"};
 //enrollStudents(std);
 //printStudents();
 enrollStudents(std, printStudents);
+                */
+
+
+
+
+
